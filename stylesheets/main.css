@@ -97,5 +97,9 @@ a:active {
 }*/
 
 #title-id {
-	padding-bottom: 150px;
+	padding-bottom: 50px;
+}
+
+.container-padding {
+	padding: 25px;
 }
