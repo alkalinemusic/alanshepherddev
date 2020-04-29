@@ -2,6 +2,9 @@
 	box-sizing: border-box;
 }
 
+h1 {
+	text-align: center;
+}
 .row::after {
   content: "";
   clear: both;
@@ -11,7 +14,7 @@
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .col-1 {width: 8.33%;}
