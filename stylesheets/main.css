@@ -81,7 +81,7 @@ a:active {
     padding: 50px;
 }
 */
-.container {
+/*.container {
   &__image {
     display: inline-block;
     vertical-align: top;
@@ -94,4 +94,8 @@ a:active {
       width: 100%;
     }
   }
+}*/
+
+#title-id {
+	padding-bottom: 150px;
 }
