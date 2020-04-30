@@ -154,6 +154,7 @@ a:active {
 
 .sidenav a:hover {
 	color: green;
+	font-size: 1.55em;
 }
 
 .main {
