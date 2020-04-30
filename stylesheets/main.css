@@ -21,7 +21,7 @@ h1 {
 /* set up col- convention for grid system*/
 [class*="col-"] {
   float: left;
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
   /*border: 1px solid red;*/
 }
 
@@ -85,26 +85,27 @@ hr {
   margin: 1.5em 0;
   text-align: center;
   border: none;
+  padding: 1.5em;
 }
 
 hr:before {
   content: '';
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 150px;
+  height: 4px;
   border-radius: 50%;
   background: #ddd;
-  margin: 0 0.4em;
+  margin: 0 5.5em;
 }
 
 hr:after {
   content: '';
   display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
+  width: 150px;
+  height: 4px;
+  border-radius: 100%;
   background: #dcd;
-  margin: 0 0.4em;
+  margin: 0 5.5em;
 }
 
 ul li {
