@@ -10,6 +10,7 @@ body {
 
 h1 {
 	text-align: center;
+	font-size: 2.0em;
 }
 /* set up row for grid system */
 .row::after {
