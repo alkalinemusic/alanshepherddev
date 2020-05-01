@@ -10,7 +10,7 @@ body {
 
 h1 {
 	text-align: center;
-	font-size: 2.0em;
+	/*font-size: 2.0em;*/
 }
 /*--------- set up row for grid system ---------*/
 .row::after {
@@ -184,6 +184,12 @@ footer a:hover {
 
 #group1  {
 	padding-top: 10px;
+}
+
+a.icons8 {
+	/*float: middle;*/
+	/*padding-top: 10px;*/
+	/*padding-left: 10px;*/
 }
 
 @media screen and (max-width: 768px) {
