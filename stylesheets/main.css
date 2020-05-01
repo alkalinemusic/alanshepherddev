@@ -103,6 +103,7 @@ ul li {
 
 .sidebar a:link {
 	text-decoration: none;
+	color: black;
 }
 
 .sidebar a:visited {
@@ -179,6 +180,10 @@ footer a:visited {
 
 footer a:hover {
 	color: green;
+}
+
+#group1  {
+	padding-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
