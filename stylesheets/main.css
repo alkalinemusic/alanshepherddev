@@ -1,14 +1,18 @@
 * {
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body {
-    padding: 30px;
-}
 
 h1 {
 	text-align: center;
 	/*font-size: 2.0em;*/
+}
+
+h4 {
+	padding-left: 20px;
+	font-family: "Poppins", sans-serif;
 }
 /*--------- set up row for grid system ---------*/
 .row::after {
@@ -99,60 +103,6 @@ ul li {
 	padding: 2px;
 }
 
-/*.sidebar a:link {
-	text-decoration: none;
-	color: black;
-}
-
-.sidebar a:visited {
-	color: black;
-	text-decoration: none;
-}
-
-.sidebar a:hover {
-	color: green;
-}
-
-.sidebar a:active {
-}
-
-.sidenav {
-	width: 120px;
-	position: fixed;
-	z-index: 1;
-	top: 20px;
-	left: 2px;
-	background: #FFF;
-	overflow-x: hidden;
-	padding: 8px 0;
-}
-
-.sidenav a {
-	padding: 6px 10px 6px 3px;
-	text-decoration: none;
-	font-size: 20px;
-	display: block;
-}
-
-.sidenav a:hover {
-	color: green;
-	font-size: 1.55em;
-}
-*/
-/*.main {*/
-	/* Same width as the sidebar + left position in px */
-	/*margin-left: 140px; */
-	/* Increased text to enable scrolling */
-	/*font-size: 20px; 
-	padding: 0px 10px;
-}
-*/
-/*@media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 16px;}
-}
-*/
-
 
 /*--------footer section-------*/
 footer {
@@ -191,16 +141,6 @@ a.icons8 {
 	/*padding-left: 10px;*/
 }
 
-
-
-
-/*
-@media screen and (max-width: 768px) {
-	div.sidebar{
-		font-size: 12px;
-	}
-}*/
-
 /*for new responsive menubar - goes across top*/
 
  /* Add a black background color to the top navigation */
@@ -235,33 +175,116 @@ a.icons8 {
 } 
 
 
- /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
- Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 700px) {
-  .topnav a {
-  	display: none; 
-  	padding-top: 25px; 
-  	font-size: 18px;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(0,0,0,.87);
+  font-family: "Poppins", sans-serif;
+}
+
+/*styling for all items in logo*/
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+/*spacing for all items in ul*/
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+/*removing the bullets from the menu items*/
+.nav-links li {
+  list-style: none; 
+}
+
+/*nav link menu item styling*/
+.nav-links a{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px; 
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*burger icon is not displayed in normal screen size*/
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/*this creates the burger icons*/
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  border-radius: 2px;
+  transition: all 0.8s ease;
+
+}
+
+/*responsive section for small screen*/
+
+@media screen and (max-width: 1024px){
+    .nav-links {
+        width: 42%;
   }
-  .topnav a.icon {
-    float: right;
+}
+
+@media screen and (max-width: 768px){
+  body {
+    overflow-x: hidden; /* this keeps it from scrolling */
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(0,0,0,.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%); /* this will move the menu off the screen */
+    transition: transform 0.3s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
     display: block;
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
-This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 700px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+/*make the transform back to zero when we click the burger*/
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
-} 
-/*end of responsive navbar query*/
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px); 
+}
