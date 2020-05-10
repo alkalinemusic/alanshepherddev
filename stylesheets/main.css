@@ -141,38 +141,6 @@ a.icons8 {
 
 /*for new responsive menubar - goes across top*/
 
- /* Add a black background color to the top navigation */
-.topnav {
-  position: relative;
-  left: 25%;
-  overflow: hidden;
-  margin-top: -3.0em;
-  padding-bottom: 8%;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #000;
-  text-align: center;
-  padding: 14px 30px;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: #999;
-}
-
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-} 
-
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -259,6 +227,10 @@ nav {
   .burger{
     display: block;
   }
+  /*make buttons disappear in mobile mode*/
+  .ui.primary.button {
+    visibility: hidden;
+  }
 }
 
 /*make the transform back to zero when we click the burger*/
@@ -285,4 +257,5 @@ nav {
 }
 .toggle .line3{
   transform: rotate(45deg) translate(-5px, -6px); 
+
 }
