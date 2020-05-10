@@ -13,6 +13,11 @@ h4 {
 	padding-left: 20px;
 	font-family: "Poppins", sans-serif;
 }
+
+
+/*----------------------OLD GRID----------------------*/
+
+
 /*--------- set up row for grid system ---------*/
 .row::after {
   content: "";
@@ -67,6 +72,13 @@ h4 {
 .container-padding {
 	padding: 8%;
 }
+/*----------------------OLD GRID----------------------*/
+
+
+
+
+
+
 
 /*hr dots for placing between sections*/
 hr {
