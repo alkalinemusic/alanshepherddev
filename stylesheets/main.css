@@ -3,82 +3,14 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
-
-h1 {
-	text-align: center;
+body {
+  margin: 0;
 }
 
 h4 {
-	padding-left: 20px;
-	font-family: "Poppins", sans-serif;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
 }
-
-
-/*----------------------OLD GRID----------------------*/
-
-
-/*--------- set up row for grid system ---------*/
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* set up col- convention for grid system*/
-[class*="col-"] {
-  float: left;
-  padding: 15px 15px 15px 15px;
-}
-
-/* grid for columns*/
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-.responsive {
-	flex: auto;
-	width:100%;
-	height:auto;
-	padding-right:1%;
-}
-
-#img-id {
-	border-radius: 2%;
-}
-
-.vert-align {
-	margin-left:33%;
-	float:left; 
-	height: auto;
-	width: auto;	
-} 
-
-
-#title-id {
-	padding-bottom: 50px;
-	letter-spacing: 2px;
-}
-
-.container-padding {
-	padding: 8%;
-}
-/*----------------------OLD GRID----------------------*/
-
-
-
-
-
-
 
 /*hr dots for placing between sections*/
 hr {
@@ -109,46 +41,39 @@ hr:after {
 }
 
 ul li {
-	list-style-type: none;
-	padding: 2px;
+  list-style-type: none;
+  padding: 2px;
 }
-
 
 /*--------footer section-------*/
 footer {
-	width: 100%;
-	background-color: #222;
-	padding: 50px 20px;
-	border-radius: 1% 1% 0% 0%;
+  width: 100%;
+  background-color: #222;
+  padding: 50px 20px;
+  border-radius: 1% 1% 0% 0%;
 }
 #footer-list01 li {
-	float: left;
-	font-size: 20px;
-	color: #eee;
-	padding: 5px;
+  float: left;
+  font-size: 20px;
+  color: #eee;
+  padding: 5px;
 }
 
 footer a:link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 footer a:visited {
-	color: #ddd;
-	text-decoration: none;
+  color: #ddd;
+  text-decoration: none;
 }
 
 footer a:hover {
-	color: green;
+  color: green;
 }
 
 #group1  {
-	padding-top: 10px;
-}
-
-a.icons8 {
-	/*float: middle;*/
-	/*padding-top: 10px;*/
-	/*padding-left: 10px;*/
+  padding-top: 10px;
 }
 
 /*for new responsive menubar - goes across top*/
@@ -270,4 +195,41 @@ nav {
 .toggle .line3{
   transform: rotate(45deg) translate(-5px, -6px); 
 
+}
+
+.grid {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+  grid-template-columns: [first] auto [middle] 70% [last] auto [end];
+  grid-gap: 1.5rem;
+}
+
+.grid > div {
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+}
+
+.grid.grid-two {
+  padding: 8%;
+  margin: 2rem;
+}
+.grid > div.blank-cols {
+  background-color: #FFF;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+}
+.grid > div.middle-cols {
+  padding: 1.8rem;
+  border-radius: 0.8rem;
+}
+
+
+@media screen and (max-width: 768px){
+  .grid {
+    grid-template-columns: [first] 1% [middle] auto [last] 1% [end];
+    grid-gap: 1rem;
+  }
+  body {
+  margin: 0rem;
+}
 }
