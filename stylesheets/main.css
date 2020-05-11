@@ -44,6 +44,9 @@ ul li {
   list-style-type: none;
   padding: 2px;
 }
+  #chevron-only {
+    visibility: hidden;
+}
 
 /*--------footer section-------*/
 footer {
@@ -168,6 +171,9 @@ nav {
   .ui.primary.button {
     visibility: hidden;
   }
+  #chevron-only {
+    visibility: visible;
+  }
 }
 
 /*make the transform back to zero when we click the burger*/
@@ -200,7 +206,7 @@ nav {
 .grid {
   display: grid;
   /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-  grid-template-columns: [first] auto [middle] 70% [last] auto [end];
+  grid-template-columns: [first] auto [middle] 60% [last] auto [end];
   grid-gap: 1.5rem;
 }
 
