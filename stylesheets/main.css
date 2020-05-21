@@ -279,6 +279,7 @@ nav {
   }
 }
 
+/* MAKE HAMBURGER INTO X AT SMALLER SCREEN */
 .toggle .line1{
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -290,31 +291,6 @@ nav {
 
 }
 
-.grid {
-  display: grid;
-  /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-  grid-template-columns: [first] auto [middle] 60% [last] auto [end];
-  grid-gap: 1.5rem;
-}
-
-.grid > div {
-  padding: 1.5rem;
-  border-radius: 0.8rem;
-}
-
-.grid.grid-two {
-  padding: 8%;
-  margin: 2rem;
-}
-.grid > div.blank-cols {
-  background-color: #FFF;
-  padding: 1.5rem;
-  border-radius: 0.8rem;
-}
-.grid > div.middle-cols {
-  padding: 1.8rem;
-  border-radius: 0.8rem;
-}
 
 
 @media screen and (max-width: 768px){
