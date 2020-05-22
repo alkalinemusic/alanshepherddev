@@ -71,8 +71,9 @@ main {
 h3 {
   font-size: 1.4em;
 	letter-spacing: 0.15em;
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
+
 
 .text1, .text2, .text3 {
   font-size: 1.2em;
@@ -117,7 +118,7 @@ h3 {
 	display: flex;  
 	justify-self: center;
   align-self: center; 
-  animation: box2_anim 0.5s linear 2.0s forwards; 
+  animation: box2_anim 0.5s linear 0.7s forwards; 
 	
 }
 .box3 {
@@ -127,11 +128,36 @@ h3 {
 	display: flex;  
 	justify-self: center;
 	align-self: center; 
-  animation: box3_anim 0.5s linear 3.0s forwards; 
+  animation: box3_anim 0.5s linear 1.2s forwards; 
 }
 .box3 h1 {
   text-align: center;
 	
+}
+#box1_h3 {
+  opacity: 0;
+  animation: box1_h3 0.5s linear 0.2s  forwards;
+}
+#box2_h3 {
+  opacity: 0;
+  animation: box1_h3 0.5s linear 0.9s  forwards;
+}
+#box3_h3 {
+  opacity: 0;
+  animation: box1_h3 0.5s linear 1.5s  forwards;
+}
+
+.text1 p{
+  opacity: 0;
+  animation: box1_p 0.5s linear 0.2s  forwards;
+}
+.text2 p{
+  opacity: 0;
+  animation: box2_p 0.5s linear 0.9s  forwards;
+}
+.text3 p{
+  opacity: 0;
+  animation: box3_p 0.5s linear 1.5s  forwards;
 }
 
 /*---------------- END OF MAIN SECTION FULL SCREEN ---------------- */
@@ -326,6 +352,47 @@ nav {
   }
 }
 
+@keyframes box1_h3 {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+
+@keyframes box1_p {
+  from {
+    opacity: 0;
+    transform: translatex(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+@keyframes box2_p {
+  from {
+    opacity: 0;
+    transform: translatex(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+@keyframes box3_p {
+  from {
+    opacity: 0;
+    transform: translatex(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY();
+  }
+}
 /*---------------- MAIN SECTION RESPONSIVE MEDIA QUERY---------------- */
 
 @media screen and (max-width: 768px) {
