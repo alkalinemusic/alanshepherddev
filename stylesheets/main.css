@@ -300,14 +300,9 @@ nav {
   main {
     height: 100vh;
     display: grid;
-    /* grid-template-columns: 2% 1fr 1fr 1fr 2%; */
     grid-template-columns: 2% 1fr 2%;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-rows: 1fr;
     grid-template-areas:
-    /* ". . box1 text1 ."
-    ". text2 box2 . ."
-    ". . box3 text3 . "; */
     ". box1 ."
     ". text1."
     ". box2 ."
@@ -319,18 +314,20 @@ nav {
   }
 
   h3 {
+    text-align: center;
     font-size: 1.4em;
-    letter-spacing: 0.15em;
-    padding-bottom: 10px;
+    letter-spacing: 0.12em;
+    padding-bottom: 20px;
   }
-
-  .text1, .text2, .text3 {
+  
+  .text1 .text2, .text3 {
+    text-align: center;
     font-size: 1.2em;
     line-height: 1.7em;
   }
 
   .text1 {
-    padding: 20px;
+    padding: 20px 20px 35px 20px;
     margin: 20px 0px;
     grid-area: text1;
     align-self: center;
@@ -338,7 +335,7 @@ nav {
     text-align: start;
   }
   .text2 {
-    padding: 20px;
+    padding: 20px 20px 35px 20px;
     margin: 20px 0px;
     grid-area: text2;
     align-self: center;
@@ -346,7 +343,7 @@ nav {
     text-align: start;
   }
   .text3 {
-    padding: 20px;
+    padding: 20px 20px 35px 20px;
     margin: 20px 0px;
     grid-area: text3;
     align-self: center;
@@ -377,15 +374,10 @@ nav {
     display: flex;  
     justify-self: center;
     align-self: center;
-    /* bottom: 45px;  */
   }
-  /* .box3 h1 {
-    text-align: center;
-    
-  } */
   .ui.segment {
-    position: relative;
-    top: 550px ;
+    /* position: relative; */
+    top: 650px ;
   }
 
 }
