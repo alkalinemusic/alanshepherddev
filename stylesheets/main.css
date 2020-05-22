@@ -108,7 +108,7 @@ h3 {
 	display: flex;  
 	justify-self: center;
   align-self: center;
-  animation: box1_anim 0.5s linear forwards; 
+  animation: box1_anim 0.5s linear; 
 }
 
 .box2 {
@@ -294,8 +294,10 @@ nav {
 }
 
 /*make the transform back to zero when we click the burger*/
+/* z-index causes the slide-out menu to stay above the objects underneath it */
 .nav-active {
   transform: translateX(0%);
+  z-index: 1000;    
 }
 
 @keyframes navLinkFade{
