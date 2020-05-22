@@ -45,7 +45,7 @@ hr:after {
 
 
 main img {
-  position: relative;
+  /* position: relative; */
   height: 25vh;
 	width: 25vh;
   border-radius: 50%;
