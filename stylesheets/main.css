@@ -106,23 +106,28 @@ h3 {
 	width: auto;
 	display: flex;  
 	justify-self: center;
-	align-self: center; 
+  align-self: center;
+  animation: box1_anim 1.0s linear forwards; 
 }
 
 .box2 {
+  opacity: 0;
   grid-area: box2;
 	width: auto;
 	display: flex;  
 	justify-self: center;
-	align-self: center; 
+  align-self: center; 
+  animation: box2_anim 1.0s linear 2.0s forwards; 
 	
 }
 .box3 {
+  opacity: 0;
   grid-area: box3;
 	width: auto;
 	display: flex;  
 	justify-self: center;
 	align-self: center; 
+  animation: box3_anim 1.0s linear 3.0s forwards; 
 }
 .box3 h1 {
   text-align: center;
@@ -288,6 +293,34 @@ nav {
 .toggle .line3{
   transform: rotate(45deg) translate(-5px, -6px); 
 
+}
+
+
+/* --------------- MAIN IMAGES ANIMATION  ----------------- */
+
+@keyframes box1_anim{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes box2_anim{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes box3_anim{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 /*---------------- MAIN SECTION RESPONSIVE MEDIA QUERY---------------- */
