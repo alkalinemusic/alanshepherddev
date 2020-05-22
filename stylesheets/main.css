@@ -40,17 +40,21 @@ hr:after {
   margin: 0 5.5em;
 }
 
-/*---------------- MAIN SECTION ---------------- */
+/*---------------- MAIN SECTION FULL SCREEN ---------------- */
 
 
 
 main img {
+  position: relative;
   height: 25vh;
 	width: 25vh;
-	border-radius: 50%;
-	/* height: 100%; */
-	/* max-width: 40%; */
+  border-radius: 50%;
+  border: 1px solid #AAAAAA;
+  padding: 1px;
+  box-shadow: 4px 8px 12px #AAAAAA;
+
 }
+
 
 main {
   height: 100vh;
@@ -125,7 +129,7 @@ h3 {
 	
 }
 
-/*---------------- MAIN SECTION ---------------- */
+/*---------------- END OF MAIN SECTION FULL SCREEN ---------------- */
 
 
 
@@ -225,7 +229,7 @@ nav {
 
 }
 
-/*responsive section for small screen*/
+/*responsive section for small screen for menu icon*/
 
 @media screen and (max-width: 1024px){
     .nav-links {
@@ -293,8 +297,6 @@ nav {
     height: 25vh;
     width: 25vh;
     border-radius: 50%;
-    /* height: 100%; */
-    /* max-width: 40%; */
   }
 
   main {
@@ -376,30 +378,8 @@ nav {
     align-self: center;
   }
   .ui.segment {
-    /* position: relative; */
     top: 650px ;
   }
 
 }
 /*---------------- MAIN SECTION RESPONSIVE MEDIA QUERY---------------- */
-
-
-
-
-
-
-
-
-/*---------------- OLDER RESPONSIVE MEDIA QUERY---------------- */
-
-/* @media screen and (max-width: 768px){
-  .grid {
-    grid-template-columns: [first] 1% [middle] auto [last] 1% [end];
-    grid-gap: 1rem;
-  }
-  body {
-    margin: 0rem;
-  }
-} */
-
-/*---------------- OLDER RESPONSIVE MEDIA QUERY---------------- */
