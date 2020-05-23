@@ -3,6 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+
 body {
   margin: 0;
   font-family: "Overpass", Arial, Helvetica, sans-serif;
@@ -62,6 +64,7 @@ main img:hover {
   transition-duration: 0.2s;
   animation-timing-function: linear;
 }
+
 
 main {
   height: 100vh;
