@@ -81,6 +81,10 @@ h3 {
   padding-bottom: 10px;
 }
 
+/* remove border from hyperlinks */
+a {
+  outline: none;
+}
 
 .text1, .text2, .text3 {
   font-size: 1.28em;
