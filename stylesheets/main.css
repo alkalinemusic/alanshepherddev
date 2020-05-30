@@ -47,6 +47,18 @@ hr:after {
 
 
 
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2% 1fr 1fr 1fr 2%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . box1 text1 ."
+  ". text2 box2 . ."
+  ". . box3 text3 . ";
+  justify-items: center;
+}
+
 main img {
   /* position: relative; */
   height: 25vh;
@@ -66,18 +78,6 @@ main img:hover {
   animation-timing-function: linear;
 }
 
-
-main {
-  height: 100vh;
-	display: grid;
-	grid-template-columns: 2% 1fr 1fr 1fr 2%;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-areas:
-	". . box1 text1 ."
-	". text2 box2 . ."
-	". . box3 text3 . ";
-	justify-items: center;
-}
 
 h3 {
   font-size: 1.4em;
